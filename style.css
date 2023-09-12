@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b0b0b;
+}
+
+
+.container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+li {
+    display: inline-block;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
